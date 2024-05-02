@@ -1,2 +1,2 @@
-# -Sudocod3r.github.io
+# Sudocod3r.github.io
 Kyle's Website
