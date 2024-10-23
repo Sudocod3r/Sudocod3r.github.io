@@ -1,195 +1,142 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Kyle Martin - Security Analyst Resume</title>
-
-    <style>
-
-        body { font-family: Arial, sans-serif; color: #f0f0f0de; margin: 40px; background-color: #000000; }
-
-        header, section { margin-bottom: 20px; }
-
-        h1, h2 { color: #fff; }
-
-        p, ul { margin: 0; }
-
-        li { margin-bottom: 5px; }
-
-        a { color: #4fa8f6; text-decoration: none; }
-
-        a:hover { text-decoration: underline; }
-
-        img { width: 100px; height: auto; margin-right: 10px; }
-
-        #az900-cert {
-            width: 300px; /* Adjust the width as needed */
-            height: auto; /* Maintains the aspect ratio */
-        
-        header img { width: 150px; border-radius: 50%; margin-bottom: 20px; }
-    </style>
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-900 text-gray-200 font-sans">
 
-    <header>
-        <img src="IMG_4066.JPG" alt="Kyle Martin">
-        <h1>Kyle Martin</h1>
-        <p>Jacksonville, Florida, United States</p>  
-
-        <p><a href=mailto:martin.kyle121@gmail.com>martin.kyle121@gmail.com</a></p>
-
-        <p><a href=https://www.linkedin.com/in/kyle-martin-329920266>LinkedIn</a> | <a href=https://github.com/sudocod3r>GitHub</a></p>
-
+    <!-- Header Section -->
+    <header class="text-center py-10">
+        <img src="IMG_4066.JPG" alt="Kyle Martin" class="w-40 h-40 mx-auto rounded-full mb-4">
+        <h1 class="text-4xl font-bold text-white">Kyle Martin</h1>
+        <p class="mt-2 text-lg">Jacksonville, Florida, United States</p>
+        <p class="mt-2">
+            <a href="mailto:martin.kyle121@gmail.com" class="text-blue-400 hover:text-blue-500">martin.kyle121@gmail.com</a>
+        </p>
+        <p class="mt-2">
+            <a href="https://www.linkedin.com/in/kyle-martin-329920266" class="text-blue-400 hover:text-blue-500">LinkedIn</a> |
+            <a href="https://github.com/sudocod3r" class="text-blue-400 hover:text-blue-500">GitHub</a>
+        </p>
     </header>
 
-    <section>
-
-        <h2>Professional Summary</h2>
-
-        <p>Resourceful and analytical Security Analyst with extensive experience in Oracle database, Server Management, SQL querying, Python Scripting, and cybersecurity protocols. Proven expertise in distribution control systems (DCS) by resolving complex issues to ensure operational efficiency and data integrity. Adept at risk assessment, vulnerability testing, and promoting best security practices.</p>
-
+    <!-- Professional Summary -->
+    <section class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-lg mb-10">
+        <h2 class="text-3xl font-bold text-white mb-4">Professional Summary</h2>
+        <p class="text-lg">
+            Founder of Squid Tech Services, providing fast and intelligent IT solutions to small businesses. Experienced in Oracle database management, SQL querying, Python scripting, and cybersecurity. Adept at risk assessment, vulnerability testing, and promoting best security practices to maintain operational efficiency and data integrity.
+        </p>
     </section>
 
-    <section>
+    <!-- Experience Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-lg mb-10">
+        <h2 class="text-3xl font-bold text-white mb-4">Experience</h2>
 
-        <h2>Experience</h2>
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-teal-400">Jr. Database Administrator - Johnson & Johnson Vision, Jacksonville, FL</h3>
+            <p class="text-sm text-gray-400">August 2023 - Present</p>
+            <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>Developed an AI-driven SQL query chatbot to enhance customer support through Azure API integrations.</li>
+                <li>Streamlined DCS Team workflows using Python scripting and automation solutions.</li>
+                <li>Provided on-site and remote support for SQL databases, production servers (WebLogic), and DCS applications.</li>
+            </ul>
+        </div>
 
-        <h3>Distribution Control System Technician - KellyOCG, Jacksonville, FL</h3>
-        <p>Augst 2023 - Present</p>
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-teal-400">Warehouse Associate - Suddath Workplace Solutions, Jacksonville, FL</h3>
+            <p class="text-sm text-gray-400">October 2017 - August 2023</p>
+            <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>Managed and secured database entries using the DCS Inventory Program and Microsoft Office tools.</li>
+                <li>Enhanced productivity through data analytics using Excel spreadsheets.</li>
+            </ul>
+        </div>
 
-        <ul>
-
-            <li>Created the Prototype Framework of SQL querying chat-bot to enhance customer support with AI that reads from our Database, IRIS Incident Tickets/Solutions, and Confluence Knowledge Pages through API integration with Azure cloud services.</li>
-
-            <li>Python Scripting to streamline the workflow of the DCS Team.</li>
-
-            <li>Provide Remote and On-site support to SQL Database, Production Servers(Weblogic), Networking(Zscaler), DCS Application, and Customers.</li>
-
-            <li>Utilizing IRIS ticketing system to manage and resolve reported incidents and tasks.</li>
-
-        </ul>
-
-        <h3>Warehouse Associate - Suddath Workplace Solutions, Jacksonville, FL</h3>
-        <p>October 2017 - August 2023</p>
-
-        <ul>
-
-            <li>Utilized DCS Inventory Program and Microsoft Office tools to manage and secure database entries and system configurations.</li>
-
-            <li>Excel Spreadsheets for productivity management.</li>
-
-        </ul>
-
-        <h3>Autoglass Technician - Safelite, Jacksonville, FL</h3>
-        <p>November 2020 - November 2021</p>
-
-        <ul>
-
-            <li>Implemented updates and security patches on mobile operating systems used for tracking customer service requests and appointments.</li>
-
-            <li>Calibrated self/assisted driving cameras after glass installation.</li>
-
-        </ul>
-
+        <div>
+            <h3 class="text-xl font-semibold text-teal-400">Autoglass Technician - Safelite, Jacksonville, FL</h3>
+            <p class="text-sm text-gray-400">November 2020 - November 2021</p>
+            <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>Implemented security patches for mobile devices used to track service requests and appointments.</li>
+                <li>Calibrated self-driving and assisted-driving cameras post glass installation.</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
+    <!-- Education Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-lg mb-10">
+        <h2 class="text-3xl font-bold text-white mb-4">Education</h2>
 
-        <h2>Education</h2>
-        <h3>Associate of Science - AS, Cyber Security - Florida State College at Jacksonville</h3>
-        <p>May 2023 - TBA</p>
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-teal-400">Associate of Science - Cybersecurity, Florida State College at Jacksonville</h3>
+            <p class="text-sm text-gray-400">May 2023 - Present</p>
+            <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>8 Credits in Hardware and Software Configuration (CompTIA A+)</li>
+            </ul>
+        </div>
 
-        <ul>
-
-            <li>[8 Credits] Hardware and Software Configuration. (CompTIA A+)</li>
-
-        </ul>
-        <h3>UCertify A-Z 900</h3>
-        <p>May 6, 2024 - TBA</p>
-        <img src="A-Z900-Certificate.png" alt="Azure AZ-900 Certification" id="az900-cert">
+        <div>
+            <h3 class="text-xl font-semibold text-teal-400">AZ-900: Microsoft Azure Fundamentals</h3>
+            <p class="text-sm text-gray-400">May 6, 2024</p>
+            <img src="A-Z900-Certificate.png" alt="Azure AZ-900 Certification" class="w-60 mt-4 rounded shadow-lg">
+        </div>
     </section>
 
-    <section>
-
-        <h2>Skills</h2>
-
-        <ul>
-
+    <!-- Skills Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-lg mb-10">
+        <h2 class="text-3xl font-bold text-white mb-4">Skills</h2>
+        <ul class="list-disc list-inside mt-2 space-y-2">
             <li>Cybersecurity</li>
-
             <li>Risk Assessment</li>
-
             <li>Vulnerability Testing - KALI Linux</li>
-
             <li>SQL Database Management</li>
-
             <li>Network Security</li>
-
             <li>Linux Systems</li>
-
             <li>Penetration Testing</li>
-
             <li>Server Management</li>
-
             <li>SIEM</li>
-
             <li>Python Scripting</li>
-            
             <li>HTML, CSS</li>
-
             <li>OSINT</li>
-            
             <li>OWASP TOP 10</li>
-            
             <li>MITRE ATT&CK</li>
-
         </ul>
-
     </section>
 
-    <section>
+    <!-- Course Achievements Section -->
+    <section class="max-w-4xl mx-auto p-6 bg-gray-800 rounded-lg shadow-lg mb-10">
+        <h2 class="text-3xl font-bold text-white mb-4">Course Achievements</h2>
 
+        <!-- Embed TryHackMe Badge -->
         <script src="https://tryhackme.com/badge/1838871"></script>
-        <p>Click the ID Badge to check out my TryHackMe profile!</p>
+        <p class="mt-4">Click the ID Badge to check out my TryHackMe profile!</p>
 
-        <h2>Course Achievements</h2>
-
-        <ul>
-            <img src="catlinuxbadge_resized.png" alt="Linux Competence Badge">
-            <li><strong>Linux Competence (TryHackMe Badge):</strong> Demonstrates profound competency in managing Linux environments, essential for secure system operations.</li>
-
-            <img src="networkingnerd_resized.png" alt="Networking Nerd Badge">
-            <li><strong>Networking Nerd (TryHackMe Badge):</strong> Completed the 'Network Fundamentals' module, essential for understanding and securing organizational networks.</li>
-
-            <img src="pentestingprincipals_resized.png" alt="Pentesting Principles Badge">
-            <li><strong>Pentesting Principles (TryHackMe Badge):</strong> Introduction to penetration testing techniques used for system security assessments.</li>
-
-            <img src="webbed_resized.png" alt="Webbed Badge"> <img src="worldwideweb_resized.png" alt="World Wide Web Badge">
-
-            <li><strong>Webbed & World Wide Web (TryHackMe Badges):</strong> Deep understanding of web technologies and security measures necessary to protect web applications.</li>
-
+        <ul class="list-disc list-inside mt-2 space-y-2">
+            <li>
+                <img src="catlinuxbadge_resized.png" alt="Linux Competence Badge" class="inline-block w-12 h-auto mr-2">
+                <strong>Linux Competence (TryHackMe Badge):</strong> Proficient in managing secure Linux environments.
+            </li>
+            <li>
+                <img src="networkingnerd_resized.png" alt="Networking Nerd Badge" class="inline-block w-12 h-auto mr-2">
+                <strong>Networking Nerd (TryHackMe Badge):</strong> Completed 'Network Fundamentals' on TryHackMe.
+            </li>
+            <li>
+                <img src="pentestingprincipals_resized.png" alt="Pentesting Principles Badge" class="inline-block w-12 h-auto mr-2">
+                <strong>Pentesting Principles (TryHackMe Badge):</strong> Introduction to penetration testing techniques.
+            </li>
+            <li>
+                <img src="webbed_resized.png" alt="Webbed Badge" class="inline-block w-12 h-auto mr-2">
+                <strong>Webbed & World Wide Web (TryHackMe Badges):</strong> Deep understanding of web technologies and security.
+            </li>
         </ul>
-
     </section>
 
-   
-
-    <footer>
-
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500">
         <p>© 2024 Kyle Martin. All Rights Reserved.</p>
-
     </footer>
 
 </body>
-
 </html>
-
- 
